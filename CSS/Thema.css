@@ -50,3 +50,7 @@ body {
   body.donker nav button:hover{
     background-color: #7070e6;
   }
+
+  body.donker #pokemons li{
+    background-color: darkgray;
+  }
