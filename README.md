@@ -109,6 +109,8 @@ https://www.w3schools.com/js/default.asp
 
 Pokémon API = https://pokeapi.co/
 
-OpenAI – ChatGPT
+- OpenAI – ChatGPT
+ - https://chatgpt.com/share/682e22c7-7430-8010-9258-3e8def6020c3
+ - https://chatgpt.com/share/682e2300-b42c-8010-abbb-db965a2c814e
 
 Lesmateriaal "Web Advanced"
