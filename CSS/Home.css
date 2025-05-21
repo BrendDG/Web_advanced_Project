@@ -1,0 +1,187 @@
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+  }
+
+  nav {
+    padding: 10px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+    gap: 10px;
+  }
+  
+  nav button {
+    padding: 8px 16px;
+    margin: 15px 5px 0 5px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    min-width: 150px;
+  }
+
+  .knop-layout{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /*pokemons css */
+
+  #pokemons {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  #pokemons li {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #pokemons li:hover {
+    transform: scale(1.05);
+  }
+  
+  #pokemons img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+  
+  #pokemons p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  #pokemons .details {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  #pokemons .details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin: 10px 5px;
+    padding: 8px 16px;
+    border: none;
+    background-color: darkcyan ;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+
+  /* CSS voor favorieten pagina */
+  #Favorieten-lijst ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  #Favorieten-lijst li {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #Favorieten-lijst img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #Favorieten-lijst p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  #Favorieten-lijst .details {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  #Favorieten-lijst .details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /*Scherm aanpassen zodat het ook op gsm kan bekeken worden*/
+  @media screen and (max-width: 768px) {
+    body {
+      margin: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    nav button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    #zoek-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    #zoek-container input,
+    #zoek-container select,
+    #zoek-container button {
+      width: 100%;
+    }
+  
+    #pokemons {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+  
+    ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    li {
+      width: 100%;
+    }
+  }
+  
+
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="../CSS/Zoeken.css">
+    <link rel="stylesheet" href="../CSS/Thema.css">
+</head>
+<body>
+    <h1>Pokemon zoeker</h1>
+    
+    <nav>
+    <!--Zoeken van pokemons + het filteren op basis van type-->
+    <section id="Zoeken">
+        <input type="text" id="zoek-input" placeholder="Zoek een Pokémon op naam..." />
+        <select id="filter">
+          <option value="">Selecteer een type</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="grass">Grass</option>
+          <option value="electric">Electric</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="ground">Ground</option>
+          <option value="bug">Bug</option>
+          <option value="poison">Poison</option>
+        </select>
+
+    <!--Het sorteren op basis van naam + hierdoor komt sorteren mee boven de knop en is het mooier-->
+      <label for="Sorteren">Sorteer op naam:</label>
+      <select id="Sorteren">
+          <option value="">Geen sortering</option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+      </select>
+        <button id="zoek-button">Zoek</button>
+      </section>
+
+    <div class="knop-layout">
+
+        
+    <!--Knop om van thema veranderen-->
+        <button id="thema-button">Donker / Licht</button>
+
+
+
+    <!--De knoppen voor de favorieten + alle pokemons te laten zien-->
+    
+    <button id="Toon-Pokemons">Toon pokemons</button>
+    <button id="Toon-Favorieten">Toon favorieten</button>
+    </div>
+    </nav>
+
+    <section id="Pokemon-lijst">
+        <h2>Pokemons</h2>
+        <ul id="pokemons"></ul>
+    </section>
+
+
+    <section id="Favorieten-lijst" style="display: none;">
+        <h2>Favorieten</h2>
+        <ul id="favorieten"></ul>
+    </section>
+
+      
+    <!--Scripts-->
+    <script src="../javascript/Thema.js"></script>
+    <script src="../javascript/Zoeken.js"></script>
+    <script src="../javascript/Main.js"></script>
+</body>
+</html>

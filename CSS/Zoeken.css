@@ -1,0 +1,25 @@
+#Zoeken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #Zoeken input,
+  #Zoeken select {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  #Sorteren, #filter, #zoek-input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-right: 10px;
+  }
